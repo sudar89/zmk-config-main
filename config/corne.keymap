@@ -31,8 +31,8 @@
 &mmv {
     /* Faster cursor by sending moves twice as often with gentle acceleration. */
     acceleration-exponent = <1>;
-    time-to-max-speed-ms = <120>;
-    trigger-period-ms = <8>;
+    time-to-max-speed-ms = <500>;
+    trigger-period-ms = <16>;
 };
 
 / {
