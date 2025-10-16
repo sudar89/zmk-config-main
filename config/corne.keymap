@@ -29,11 +29,10 @@
 };
 
 &mmv {
-    /* Faster cursor with moderate acceleration for smoother control. */
-    speed = <28>;
+    /* Faster cursor by sending moves twice as often with gentle acceleration. */
     acceleration-exponent = <1>;
     time-to-max-speed-ms = <120>;
-    trigger-period-ms = <16>;
+    trigger-period-ms = <8>;
 };
 
 / {
