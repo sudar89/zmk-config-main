@@ -15,11 +15,24 @@
     // 21 backlight + 6 glowlight
 };
 
+&msc {
+    acceleration-exponent = <1>;      // 0
+    time-to-max-speed-ms = <100>;       // 300
+    delay-ms = <0>;                   // 0
+};
+
+&mt {
+    // tapping-term-ms = <250>; // This is the value already set by default
+
+    flavor = "tap-preferred";
+
+    // quick-tap-ms = <170>; // This is the value already set by default
+};
+
 &mmv {
-    /* Slightly faster pointer speed with gentler acceleration. */
+    time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
-    time-to-max-speed-ms = <120>;
-    speed = <28>;
+    trigger-period-ms = <16>;
 };
 
 / {
