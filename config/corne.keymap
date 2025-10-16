@@ -15,6 +15,13 @@
     // 21 backlight + 6 glowlight
 };
 
+&mmv {
+    /* Slightly faster pointer speed with gentler acceleration. */
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <120>;
+    speed = <28>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
